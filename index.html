@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang=en> 
+<head> 
+
+    <title>Exempel 1 navigation bar</title> 
+
+    <meta charset = "utf-8" /> 
+
+    <link href = "navigation.css" rel="stylesheet" type="text/css" /> 
+
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+</head> 
+
+<header class="dropdownmenu">
+  <ul>
+      <li class="dropdown"> <a href="index.html" class="dropbtn">Images</a>
+          <div class="dropdown-content"> 
+            <a href="img/image1.jpg">Cool skelly hands</a> 
+            <a href="img/image2.jpg">Sleeping cat</a> 
+            <a href="img/image3.jpg">Some kind of asian festival</a> 
+            <a href="img/image4.jpg">Guy burning in car</a> 
+            <a href="img/image5.jpg">Golden sky with trees</a> 
+
+          </div>
+      </li>
+  </ul>
+</header>
+
+<body> 
+     <div class="div-content">
+
+        <img class="mySlides" src="img/image1.jpg" style="width: 100%" style="height: 50%" onclick="changeImage(1)" alt="Skeleton">
+        <img class="mySlides" src="img/image2.jpg" style="width: 100%" style="height: 50%" onclick="changeImage(1)" alt="Cat">
+        <img class="mySlides" src="img/image3.jpg" style="width: 100%" style="height: 50%" onclick="changeImage(1)" alt="Festival">
+        <img class="mySlides" src="img/image4.jpg" style="width: 100%" style="height: 50%" onclick="changeImage(1)" alt="Car">
+        <img class="mySlides" src="img/image5.jpg" style="width: 100%" style="height: 50%" onclick="changeImage(1)" alt="Trees">
+        <button class="slider-button display-left"
+        onclick="changeImage(-1)">&#11164;left</button>
+        <button class="slider-button display-right"
+        onclick="changeImage(1)">right&#11166;</button>
+    </div>
+    <script src="js/domjs.js"></script>
+
+
+
+
+    <!--wrapper börjar--> 
+
+    <div class="wrapper"> 
+
+    <header class="header"> 
+
+    </header> 
+
+    <header class="mainmenu"> 
+
+        <ul> 
+
+            <li><a href="home.html">Hem</a></li> 
+
+            <li><a href="news.html">Nyheter</a></li> 
+
+            <li><a href="contacts.html">kontakt</a></li> 
+
+            <li><a href="about.html">Om</a></li> 
+
+        </ul> 
+
+
+    </header> 
+
+    <div class="login">
+      <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="img/image6.jpg" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="wrapper_2col"> 
+
+    <div class="leftcol"> 
+
+      <p> 
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id erat 
+
+      et elit blandit lobortis a a neque. Fusce lacus nisi, vulputate quis vulputate 
+
+      vel, aliquam vitae libero. Sed congue ligula quis turpis tincidunt ut 
+
+      ultrices ante feugiat. Sed semper tortor fermentum ligula fringilla tristique. 
+
+      Mauris lacinia venenatis commodo. Curabitur scelerisque pharetra facilisis. 
+
+      Donec et iaculis nunc. Curabitur rhoncus iaculis diam, rutrum faucibus 
+
+      magna cursus in. Vestibulum eu consectetur magna. 
+
+      </p> 
+
+      <p> 
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id 
+
+        leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus 
+
+        ultricies a aliquam elit ornare. Curabitur ac libero et sapien feugiat 
+
+        porta vitae sed lorem. In faucibus imperdiet neque, sit amet accumsan 
+
+        ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur. 
+
+        Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante. 
+
+        Sed eget tellus dui, eget sodales lectus. 
+
+      </p> 
+
+    </div><!--leftcol slutar--> 
+
+    <div class="rightcol"> 
+
+      <p> 
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id erat 
+
+        et elit blandit lobortis a a neque. Fusce lacus nisi, vulputate quis vulputate 
+
+        vel, aliquam vitae libero. Sed congue ligula quis turpis tincidunt ut 
+
+        ultrices ante feugiat. Sed semper tortor fermentum ligula fringilla tristique. 
+
+        Mauris lacinia venenatis commodo. Curabitur scelerisque pharetra facilisis. 
+
+        Donec et iaculis nunc. Curabitur rhoncus iaculis diam, rutrum faucibus 
+
+        magna cursus in. Vestibulum eu consectetur magna. 
+
+      </p> 
+
+      <p><img src="img/andreas.jpg" height="300" width="201" alt="Foto" /> 
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id 
+
+        leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus 
+
+        ultricies a aliquam elit ornare. Curabitur ac libero et sapien feugiat 
+
+        porta vitae sed lorem. In faucibus imperdiet neque, sit amet accumsan 
+
+        ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur. 
+
+        Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante. 
+
+        Sed eget tellus dui, eget sodales lectus. 
+
+      </p> 
+
+      <div class="push"></div> 
+
+    </div><!--rightcol slutar--> 
+
+    </div><!--wrapper2col slutar--> 
+
+    <footer class="footer"> 
+
+      <p>All rights reserved - &#169; Copyright</p> 
+
+    </footer> 
+
+    </div><!--wrapper slutar--> 
+
+  </body> 
+
+</html> 
